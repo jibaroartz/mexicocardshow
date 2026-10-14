@@ -1,3 +1,10 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#15240d">
 <title>Mapa México Card Show</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Figtree:wght@400;500;600;700;800&display=swap">
 <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.js"></script>
@@ -282,6 +289,8 @@ input::placeholder{color:var(--muted);opacity:.8}
 .modal .acts{display:flex;gap:10px;flex-wrap:wrap}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
+</head>
+<body>
 
 <div id="demobar"></div>
 <div id="app"></div>
@@ -1037,3 +1046,5 @@ function saveItem(){
 setInterval(()=>{document.querySelectorAll('[data-cd]').forEach(el=>{const ms=Number(el.dataset.cd)-now();el.textContent=fmt(ms);if(ms<=0&&!el.dataset.done){el.dataset.done='1';if(S.screen!=='seller')render()}})},1000);
 render();
 </script>
+</body>
+</html>
